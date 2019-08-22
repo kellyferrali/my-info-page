@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="file:///Users/kellyrita/Documents/design.css">
+  <script src="file:///Users/kellyrita/Documents/tabs.js"></script>
+  <style>
+table, th, td {
+border: 1px solid black;
+border-collapse: collapse;
+}
+th, td {
+padding: 15px;
+}
+</style>
+</head>
+<body>
+  <center><img src="file:///Users/kellyrita/Downloads/bell2.png" alt="bell logo" width="652" height="336" border="0"/></center>
+  <div class="tab">
+    <button class="tablinks" onclick="openCity(event, 'Home')"><a href="file:///Users/kellyrita/Documents/homepage.html">Home</a></button>
+    <button class="tablinks" onclick="openCity(event, 'My information')">My Info</button>
+    <button class="tablinks" onclick="openCity(event, 'Helping Hands')"><a href="file:///Users/kellyrita/Documents/helping.html">Helping Hands</a></button>
+    <button class="tablinks" onclick="openCity(event, 'Meals on Wheels')"><a href="file:///Users/kellyrita/Documents/meals_wheels.html">Meals on Wheels</a></button>
+    <button class="tablinks" onclick="openCity(event, 'Prescriptions and Appts')"><a href="file:///Users/kellyrita/Documents/appt.html">Prescriptions and Appts</a></button>
+    <button class="tablinks" onclick="openCity(event, 'Get Involved')"><a href="file:///Users/kellyrita/Documents/get_involved.html">Get Involved</a></button>
+    <button class="tablinks" onclick="openCity(event, 'Connect With Others!')"><a href="file:///Users/kellyrita/Documents/connect.html">Connect With Others!</a></button>
+  </div>
+
+  <center><h1>My Info Section</h1></center>
+
+  <div class="row">
+  <div class="column">
+  <center><p>By filling out the table to the right as accurately as possible,
+    the creators at Bell can help you navigate through your day easier! We can
+    ensure your information is secure and completely confidential, and only
+    accessible to our devoted and professional team. In the case your information
+    changes, you can easily edit the form below to make sure it is as updated as possible!</p></center>
+    </div>
+    <div class="column">
+    <center><img src="file:///Users/kellyrita/Downloads/pill.jpg" width="408" length="272" border="1"/></center>
+    <br />
+    </div>
+
+<hr />
+
+  <form name="information" action="bell.inquires@gmail.com?subject=My Information Form" method="post" enctype="text/plain">
+    <br />
+  <center><b><h1>Information Form</h1></b></center>
+  <fieldset>
+<legend><p align="left"><b>Personal Information:</b></p></legend>
+<p align="left">
+      First Name:
+ <input name="firstname" type="text" size="25">
+
+ Middle Initial:
+ <input name="mi" type="text">
+ <!--Make this box smaller-->
+
+ Last Name:
+ <input name="mi" type="text" size="25">
+<br />
+<br />
+ D.O.B
+ <input name="dob" type="text">
+<br />
+<br />
+ Email:
+ <input name="email" type="text">
+<br><br>
+ Address:
+ <input name="add" type="text">
+
+ City:
+ <input name="city" type="text">
+
+ State:
+ <input name="state" type="text">
+ <br><br>
+ <!--Make this box smaller-->
+</fieldset>
+
+<fieldset>
+<legend><p align="left"><b>Medical Information:</b></p></legend>
+<p align="left">
+Doctor's Name:
+ <input name="docname" type="text">
+
+ Doctor's Phone Number:
+ <input name="phone#" type="text"><br /><br />
+<!--Make this box just a bit smaller-->
+ Hospital/Clinic Address:
+ <input name="hospadd" type="text">
+ <br><br>
+
+ What Medications Do You Take?:
+ <input name="meds" type="text">
+
+
+ <p align= "left"> Please List Any Conditions You Have:</p>
+ <p align="left"> <textarea name="conditions" rows="10" cols="60"></textarea></p>
+ <!--You can change the size of the box if it looks dumb-->
+ </fieldset>
+ <div class="vl"></div>
+
+<div>
+  <fieldset>
+  <legend><p align="left"><b> Add To Your Daily Log!</b></p></legend>
+<table width="760">
+<tr>
+  <th><center><p><b>Today Has Been →</b></p><br /></center></th>
+    <br />
+    <th><img src="file:///Users/kellyrita/Downloads/happy.png" alt="happy face" width="256" height="256" />
+    <input type="radio" name="emotion" value="happy"> Good<br></th>
+    <th><img src="file:///Users/kellyrita/Downloads/eh.png" alt="straight face" width="256" height="256" />
+    <input type="radio" name="emotion" value="eh"> Indifferent/Calm<br></th>
+    <th><img src="file:///Users/kellyrita/Downloads/sad2.png" alt="sad face" width="256" height="256" />
+    <input type="radio" name="emotion" value="sad">Bad</th>
+ </tr>
+  </table>
+
+    <p align="left"> Have You Taken Your Medications Today?<br> <input name="medis" type="text"></p><br />
+    <p align="left"> Did You Need Assistance From Our Helping Hands Today?<br> <input name="assist" type="text"></p><br />
+    <p align="left"> How Did You Sleep Last Night?<br> <input name="sleep" type="text"></p><br />
+    <p align="left"> How Are You Feeling Today?<br><input name="feeling" type="text"></p><br />
+       <!--Possibly insert emoji's here??-->
+
+       <!--There is a biggg space before first name that has o be fixed in CSS-->
+
+<p align="left" type="text" width="150%"> <input type="submit" value="Submit My Information">
+  </fieldset>
+</form>
+
+  </body>
